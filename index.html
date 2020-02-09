@@ -22,6 +22,31 @@
       <button>Play/Pause</button>
     </main>
 
-    <script></script>
+    <script>
+      const video = document.querySelector("video");
+      const button = document.querySelector("button");
+
+      function MediaPlayer(config) {
+        this.media = config.el;
+      }
+      MediaPlayer.prototype.play = function() {
+        this.media.play();
+      };
+      MediaPlayer.prototype.paused = function() {
+        this.media.pause();
+      };
+
+      const player = new MediaPlayer({ el: video });
+
+      button.onclick = () => {
+        if (video.paused) {
+          player.play();
+          console.log("Play");
+        } else {
+          player.paused();
+          console.log("Pause");
+        }
+      };
+    </script>
   </body>
 </html>
