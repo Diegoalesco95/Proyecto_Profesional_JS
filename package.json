@@ -1,0 +1,15 @@
+{
+  "name": "Proyecto_Profesional_JS",
+  "version": "1.0.0",
+  "description": "Proyecto del Curso Profesional de JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "keywords": [],
+  "author": "Diego Osorio (Diegoalesco95@hotmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
