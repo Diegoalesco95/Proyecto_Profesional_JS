@@ -15,8 +15,5 @@
   },
   "browserlist": [
     "last 1 Chrome version"
-  ],
-  "dependencies": {
-    "@babel/polyfill": "^7.8.3"
-  }
+  ]
 }
