@@ -4,12 +4,19 @@
   "description": "Proyecto del Curso Profesional de JavaScript",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "keywords": [],
   "author": "Diego Osorio (Diegoalesco95@hotmail.com)",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.7.5"
+  },
+  "browserlist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "@babel/polyfill": "^7.8.3"
   }
 }
