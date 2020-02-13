@@ -1,13 +1,13 @@
-const VERSION = "v1";
+const VERSION = 'v1';
 
-self.addEventListener("install", event => {
+self.addEventListener('install', event => {
   event.waitUntil(precache());
 });
 
-self.addEventListener("fetch", event => {
+self.addEventListener('fetch', event => {
   const request = event.request;
   // get
-  if (request.method !== "GET") {
+  if (request.method !== 'GET') {
     return;
   }
 
